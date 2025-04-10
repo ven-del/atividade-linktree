@@ -1,8 +1,74 @@
-:root {
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 
+
+:root {
+    --border-radius-image: 50%;
+    --border-radiius-container: 10px;
 }
 
 * {
     margin: 0;
     padding: 0;
+}
+
+body {
+    background: black;
+}
+
+.container {
+    background-color: rgb(64, 62, 62);
+    width: 350px;
+    height: 600px;
+    margin: 60px auto;
+    padding: 60px;
+    box-sizing: border-box;
+    text-align: center;
+    border-radius: var(--border-radiius-container);
+}
+
+.image img {
+    height: 150px;
+    width: 150px;
+    border-radius: var(--border-radius-image);
+    margin-top: -40px;
+}
+
+.info {
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.info h1 {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 40px;
+    font-weight: 900;
+    color: azure;
+}
+
+.info h2 {
+    font-family: "Nunito", serif;
+    font-size: 20px;
+    font-weight: 500;
+    color: azure;
+}
+
+.easter-egg p {
+    font-family: "Nunito", serif;
+    font-weight: 200;
+    font-style: italic;
+    color: azure;
+}
+
+.link-list {
+    margin-top: 20px;
+}
+
+.link-list ul{
+    list-style-type: none;
+}
+
+.link-list a{
+    text-decoration: none;
+    color: antiquewhite;
 }
