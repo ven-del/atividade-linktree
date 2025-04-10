@@ -4,34 +4,51 @@
 
 :root {
     --border-radius-image: 50%;
-    --border-radiius-container: 10px;
+    --border-radiius-container: 12px;
+    --border-radiius-button: 10px;
+    --gradient-light-purple: #2a0055;
+    --gradient-deep-purple: #0f0a1e;
+    --button-hover-purple: #403568;
+    --container-blur: rgba(255, 255, 255, 0.05);
+    --shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.1);
 }
 
 * {
     margin: 0;
     padding: 0;
+    overflow: hidden;
 }
 
 body {
-    background: black;
+    background: linear-gradient(to bottom left, var(--gradient-light-purple) , var(--gradient-deep-purple) );
+    min-height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
+
 .container {
-    background-color: rgb(64, 62, 62);
+    background-color: var(--container-blur);
+    backdrop-filter: blur(8px);
+    max-width: 350px;
     width: 350px;
     height: 600px;
     margin: 60px auto;
-    padding: 60px;
     box-sizing: border-box;
     text-align: center;
+    padding: 2rem;
+    border: 1px solid rgba(255, 255, 255, 0.01);
     border-radius: var(--border-radiius-container);
+    box-shadow: var(--shadow);
 }
 
 .image img {
-    height: 150px;
-    width: 150px;
+    height: 96px;
+    width: 96px;
     border-radius: var(--border-radius-image);
-    margin-top: -40px;
+    border: 2px solid white;
 }
 
 .info {
@@ -50,7 +67,8 @@ body {
     font-family: "Nunito", serif;
     font-size: 20px;
     font-weight: 500;
-    color: azure;
+    color: #F1F1FF;
+    font-style: bold;
 }
 
 .easter-egg p {
@@ -66,9 +84,28 @@ body {
 
 .link-list ul{
     list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.link-list li {
+    margin: 10px 0;
+
 }
 
 .link-list a{
+    font-family: "Nunito", serif;
     text-decoration: none;
     color: antiquewhite;
+    display: block;
+    text-align: center;
+    padding: 12px 40px;
+    border-radius: var(--border-radiius-button);
+    background: #2c2543;
+    transition: background 300ms ease;
+}
+
+.link-list a:hover {
+    background: #F1F1FF;
+    color: #2C0A55;
 }
