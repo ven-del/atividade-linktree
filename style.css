@@ -8,7 +8,9 @@
     --border-radiius-button: 10px;
     --gradient-light-purple: #2a0055;
     --gradient-deep-purple: #0f0a1e;
-    --button-hover-purple: #403568;
+    --color-off-white: #F1F1FF;
+    --button-background-purple: #2c2543;
+    --button-text-color: #2C0A55;
     --container-blur: rgba(255, 255, 255, 0.05);
     --shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.1);
 }
@@ -16,6 +18,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     overflow: hidden;
 }
 
@@ -26,6 +29,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    font-family: "Nunito", serif;
 }
 
 
@@ -64,15 +68,14 @@ body {
 }
 
 .info h2 {
-    font-family: "Nunito", serif;
+    
     font-size: 20px;
     font-weight: 500;
-    color: #F1F1FF;
+    color: var(--color-off-white);
     font-style: bold;
 }
 
 .easter-egg p {
-    font-family: "Nunito", serif;
     font-weight: 200;
     font-style: italic;
     color: azure;
@@ -94,14 +97,13 @@ body {
 }
 
 .link-list a{
-    font-family: "Nunito", serif;
     text-decoration: none;
     color: antiquewhite;
     display: block;
     text-align: center;
     padding: 12px 40px;
     border-radius: var(--border-radiius-button);
-    background: #2c2543;
+    background: var(--button-background-purple);
     transition: background 300ms ease;
 }
 
