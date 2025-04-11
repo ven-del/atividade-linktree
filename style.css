@@ -4,8 +4,8 @@
 
 :root {
     --border-radius-image: 50%;
-    --border-radiius-container: 12px;
-    --border-radiius-button: 10px;
+    --border-radius-container: 12px;
+    --border-radius-button: 10px;
     --gradient-light-purple: #2a0055;
     --gradient-deep-purple: #0f0a1e;
     --color-off-white: #F1F1FF;
@@ -44,7 +44,7 @@ body {
     text-align: center;
     padding: 2rem;
     border: 1px solid rgba(255, 255, 255, 0.01);
-    border-radius: var(--border-radiius-container);
+    border-radius: var(--border-radius-container);
     box-shadow: var(--shadow);
 }
 
@@ -102,7 +102,7 @@ body {
     display: block;
     text-align: center;
     padding: 12px 40px;
-    border-radius: var(--border-radiius-button);
+    border-radius: var(--border-radius-button);
     background: var(--button-background-purple);
     transition: background 300ms ease;
 }
